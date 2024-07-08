@@ -1,0 +1,199 @@
+﻿@model exampleapp.Models.CoachField
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>CoachField</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WorkingDepartment" class="control-label"></label>
+                <input asp-for="WorkingDepartment" class="form-control" />
+                <span asp-validation-for="WorkingDepartment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label"></label>
+                <input asp-for="Position" class="form-control" />
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience" class="control-label"></label>
+                <input asp-for="Experience" class="form-control" />
+                <span asp-validation-for="Experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearsEnrolled" class="control-label"></label>
+                <input asp-for="YearsEnrolled" class="form-control" />
+                <span asp-validation-for="YearsEnrolled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcademicBackground" class="control-label"></label>
+                <input asp-for="AcademicBackground" class="form-control" />
+                <span asp-validation-for="AcademicBackground" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastTwoYearsExperience" class="control-label"></label>
+                <input asp-for="LastTwoYearsExperience" class="form-control" />
+                <span asp-validation-for="LastTwoYearsExperience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Abilities" class="control-label"></label>
+                <input asp-for="Abilities" class="form-control" />
+                <span asp-validation-for="Abilities" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reason" class="control-label"></label>
+                <input asp-for="Reason" class="form-control" />
+                <span asp-validation-for="Reason" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InternalCoachEffect" class="control-label"></label>
+                <input asp-for="InternalCoachEffect" class="form-control" />
+                <span asp-validation-for="InternalCoachEffect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PossibleDevelopment" class="control-label"></label>
+                <input asp-for="PossibleDevelopment" class="form-control" />
+                <span asp-validation-for="PossibleDevelopment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelfEducation" class="control-label"></label>
+                <input asp-for="SelfEducation" class="form-control" />
+                <span asp-validation-for="SelfEducation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BeliefDevelopment" class="control-label"></label>
+                <input asp-for="BeliefDevelopment" class="form-control" />
+                <span asp-validation-for="BeliefDevelopment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeadershipFeature" class="control-label"></label>
+                <input asp-for="LeadershipFeature" class="form-control" />
+                <span asp-validation-for="LeadershipFeature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmotionalOpenness" class="control-label"></label>
+                <input asp-for="EmotionalOpenness" class="form-control" />
+                <span asp-validation-for="EmotionalOpenness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmotionalShare" class="control-label"></label>
+                <input asp-for="EmotionalShare" class="form-control" />
+                <span asp-validation-for="EmotionalShare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TimetoSpareforCoaching" class="control-label"></label>
+                <input asp-for="TimetoSpareforCoaching" class="form-control" />
+                <span asp-validation-for="TimetoSpareforCoaching" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LikeCoaching" class="control-label"></label>
+                <input asp-for="LikeCoaching" class="form-control" />
+                <span asp-validation-for="LikeCoaching" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotivationReasoning" class="control-label"></label>
+                <input asp-for="MotivationReasoning" class="form-control" />
+                <span asp-validation-for="MotivationReasoning" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Supporting" class="control-label"></label>
+                <input asp-for="Supporting" class="form-control" />
+                <span asp-validation-for="Supporting" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaveTimetoListen" class="control-label"></label>
+                <input asp-for="HaveTimetoListen" class="form-control" />
+                <span asp-validation-for="HaveTimetoListen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KnowListening" class="control-label"></label>
+                <input asp-for="KnowListening" class="form-control" />
+                <span asp-validation-for="KnowListening" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcceptanceDefeat" class="control-label"></label>
+                <input asp-for="AcceptanceDefeat" class="form-control" />
+                <span asp-validation-for="AcceptanceDefeat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KnowingEmpathy" class="control-label"></label>
+                <input asp-for="KnowingEmpathy" class="form-control" />
+                <span asp-validation-for="KnowingEmpathy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Positiveness" class="control-label"></label>
+                <input asp-for="Positiveness" class="form-control" />
+                <span asp-validation-for="Positiveness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoachingAbility" class="control-label"></label>
+                <input asp-for="CoachingAbility" class="form-control" />
+                <span asp-validation-for="CoachingAbility" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WillingToBeCoached" class="control-label"></label>
+                <input asp-for="WillingToBeCoached" class="form-control" />
+                <span asp-validation-for="WillingToBeCoached" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ToleranceToAnything" class="control-label"></label>
+                <input asp-for="ToleranceToAnything" class="form-control" />
+                <span asp-validation-for="ToleranceToAnything" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeopleWellness" class="control-label"></label>
+                <input asp-for="PeopleWellness" class="form-control" />
+                <span asp-validation-for="PeopleWellness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SupportingPeople" class="control-label"></label>
+                <input asp-for="SupportingPeople" class="form-control" />
+                <span asp-validation-for="SupportingPeople" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FeatureOriented" class="control-label"></label>
+                <input asp-for="FeatureOriented" class="form-control" />
+                <span asp-validation-for="FeatureOriented" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

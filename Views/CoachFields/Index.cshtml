@@ -1,0 +1,310 @@
+﻿@model IEnumerable<exampleapp.Models.CoachField>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkingDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearsEnrolled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+          
+            <th>Details</th>
+            <th>Confirm</th>
+            <td>Refuse</td>
+           <!--
+              <th>
+            @Html.DisplayNameFor(model => model.AcademicBackground)
+             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastTwoYearsExperience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Abilities)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InternalCoachEffect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PossibleDevelopment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfEducation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeliefDevelopment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadershipFeature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmotionalOpenness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmotionalShare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimetoSpareforCoaching)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LikeCoaching)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotivationReasoning)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Supporting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HaveTimetoListen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KnowListening)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcceptanceDefeat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KnowingEmpathy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Positiveness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoachingAbility)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WillingToBeCoached)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToleranceToAnything)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeopleWellness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SupportingPeople)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeatureOriented)
+            </th>
+            -->
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkingDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Experience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearsEnrolled)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+        
+         <!--   
+                 <td>
+                @Html.DisplayFor(modelItem => item.AcademicBackground)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.LastTwoYearsExperience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Abilities)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InternalCoachEffect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PossibleDevelopment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelfEducation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BeliefDevelopment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeadershipFeature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmotionalOpenness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmotionalShare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimetoSpareforCoaching)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LikeCoaching)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotivationReasoning)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supporting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HaveTimetoListen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KnowListening)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcceptanceDefeat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KnowingEmpathy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Positiveness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoachingAbility)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WillingToBeCoached)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToleranceToAnything)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeopleWellness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SupportingPeople)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeatureOriented)
+            </td>
+           -->
+            <td> <a asp-action="Details" asp-route-id="@item.Id">Detail</a> </td> |
+                <td>
+                    <a href="#" onclick="sendConfirmation('@item.Id', true)">OK</a>
+                </td>
+                <td>
+                    <a href="#" onclick="sendConfirmation('@item.Id', false)">Cancel</a>
+                </td>
+        </tr>
+}
+        <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailModalLabel">Coach Field Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody id="detailTable"></tbody>
+                        </table>
+                    </div>
+              
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function sendConfirmation(id, confirmValue) {
+                // Log to console for demonstration
+                console.log("ID:", id, "Confirm:", confirmValue);
+
+            
+                fetch(`/CoachFields/Edit/`, { 
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ id: id, confirm: confirmValue }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle response
+                    console.log('Response:', data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+               
+            }
+
+            /*------------------------------------*/
+
+            function showDetails(id) {
+                fetch(`/CoachFields/Details/${id}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Populate the modal with data
+                        const detailTable = document.getElementById('detailTable');
+                      /*  detailTable.innerHTML = `
+                            <tr><td>Name</td><td>${data.name}</td></tr>
+                            <tr><td>Phone Number</td><td>${data.phoneNumber}</td></tr>
+                            <tr><td>Email</td><td>${data.email}</td></tr>
+                            <tr><td>Working Department</td><td>${data.workingDepartment}</td></tr>
+                            <tr><td>Position</td><td>${data.position}</td></tr>
+                            <tr><td>Experience</td><td>${data.experience}</td></tr>
+                            <tr><td>Years Enrolled</td><td>${data.yearsEnrolled}</td></tr>
+                            <tr><td>Status</td><td>${data.status}</td></tr>
+                        `;*/
+                        // Show the modal
+                        $('#detailModal').modal('show');
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+        </script>
+    </tbody>
+</table>
